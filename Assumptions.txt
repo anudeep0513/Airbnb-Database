@@ -1,0 +1,17 @@
+screape_id,last_scraped,experiences_offered,country,country_code,jurisdiction_names,calendar_last_scraped can be removed as the column contains repeating single value
+
+In the street attributes, values related to city,state,zipcode and country are repeated which can be removed.
+
+smart_location attribute is the same as combination of city and state attributes which can be removed.
+
+market can be dropped as well, since market is repeated attribute compared with city.
+
+Pictures of the apartment or rooms of Airbnb are available in the listing_url so, thumbnail_url,medium_url,picture_url,xl_picture_url can be removed.
+
+neighbourhood, neighbourhood_cleansed, neighbourhood_group_cleansed can be removed as they provide no relevant information.
+
+requires_license,require_guest_profile_picture and require_guest_phone_verification doesn't give any relevant information and contains single value repeated.
+
+calendar_updated is not a numeric attribue and doesn't signify any information.
+
+Notes, neighborhood_overview,space have the same data.
